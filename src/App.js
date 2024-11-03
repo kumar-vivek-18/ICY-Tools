@@ -8,6 +8,7 @@ import Loader from './components/Loader';
 import Properties from './components/Properties';
 import VerifiedProperties from './components/VerifiedProperties';
 import UnverifiedProperties from './components/UnverifiedProperties';
+import PropertyDetailItems from './components/PropertyDetailItem';
 
 const Home = lazy(() => import('./components/Home'))
 
@@ -20,10 +21,12 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/verified-properties' element={<VerifiedProperties />} />
           <Route path='/unverified-properties' element={<UnverifiedProperties />} />
+          <Route path='/:id' element={<PropertyDetailItems />} />
+          <Route path='/:id' element={<PropertyDetailItems />} />
         </Routes>
       </Suspense>
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   );

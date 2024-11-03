@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux"
-import { setUnverifiedProperties } from "../redux/propertiesSlice";
+import { setUnverifiedProperties, setVerifiedProperties } from "../redux/propertiesSlice";
 
 
 export const useFetchVerifiedProperties = async (loading, setLoading) => {
@@ -19,7 +19,7 @@ export const useFetchVerifiedProperties = async (loading, setLoading) => {
                     .then((res) => {
                         if (res.status === 200) {
                             console.log('verified properties', res.data);
-                            dispatch(setUnverifiedProperties(res.data));
+                            dispatch(setVerifiedProperties(res.data));
                         }
                     })
             } catch (error) {
