@@ -11,11 +11,12 @@ const UnverifiedProperties = () => {
     // console.log("2", loading);
     // setTimeout(console.log('load', loading), 2000);
     return (
-        <div className='max-w-[1400px] mt-[80px]'>
+        <div className='max-w-[1400px] my-[100px]'>
             <div className='flex flex-row flex-wrap justify-evenly'>
                 {properties && properties?.length > 0 && properties.map((property) => {
                     return (
                         <PropertiesItem
+                            key={property._id}
                             property={property}
                         />
                     )

@@ -21,6 +21,9 @@ module.exports = {
       silver: "#f0f3f7",
       silverLite: "#fafbfc",
       ash: "#666565",
+      yellow: '#FEEC37',
+      yellowlight: '#FFFF00',
+      green: '#88C273'
     },
     extend: {
       fontFamily: {

@@ -19,7 +19,7 @@ const PropertiesItem = ({
                 <div>
                     <div className="py-2 px-2">
                         <div className="w-auto p-1 ">
-                            {/* <p className="font-Poppins text-xs rounded-full text-blue  absolute bg-white p-2 py-1 mt-2 ml-2">
+                            {/* <p className="font-Poppins text-xs rounded-full text-yellow  absolute bg-white p-2 py-1 mt-2 ml-2">
                                 {state}
                             </p> */}
                             <img
@@ -42,27 +42,27 @@ const PropertiesItem = ({
                     </div>
                     <div className="flex justify-between px-4 mb-3">
                         <div className="flex items-center ">
-                            <RiHotelBedFill className="text-medium text-blue mr-1" />{" "}
+                            <RiHotelBedFill className="text-medium text-yellow mr-1" />{" "}
                             <p className="text-xs text-ash">{property.bedRooms} Bed</p>
                         </div>
                         <div className="flex items-center ">
-                            <FaBath className="text-medium text-blue mr-1" />{" "}
+                            <FaBath className="text-medium text-yellow mr-1" />{" "}
                             <p className="text-xs text-ash">{property.bathRooms} Bath</p>
                         </div>
                         <div className="flex items-center ">
-                            <MdSpaceDashboard className="text-medium text-blue mr-1" />{" "}
+                            <MdSpaceDashboard className="text-medium text-yellow mr-1" />{" "}
                             <p className="text-xs text-ash">{property.propertyArea} sqft</p>
                         </div>
                     </div>
                     <div className="flex flex-wrap justify-between  px-4 pb-3 mb-4">
                         {/* <Link to={`}> */}
-                        <button onClick={() => { navigate(`/${property._id}`, { state: property }) }} className=" bg-blue text-white font-bold text-xs px-4 py-2 rounded-lg shadow-lg">
+                        <button onClick={() => { navigate(`/${property._id}`, { state: property }) }} className=" bg-yellow text-white font-bold text-xs px-4 py-2 rounded-lg shadow-lg">
                             View Details
                         </button>
                         {/* </Link> */}
-                        <h1 className="font-Poppins text-md text-blue font-semibold pl-1 py-1">
+                        <h1 className="font-Poppins text-md text-yellow font-semibold pl-1 py-1">
                             {`Rs ${property.propertyPrice.lb}-${property.propertyPrice.lb}`}
-                            {/* <span className="font-Poppins text-liteBlue text-xs">
+                            {/* <span className="font-Poppins text-liteyellow text-xs">
                                 /{rentType}
                             </span> */}
                         </h1>
